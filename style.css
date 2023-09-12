@@ -1,0 +1,12 @@
+:root {
+    --color1: #FFFFFF;
+    --color2: #A5FFD6;
+    --color3: #84DCC6;
+    --color4: #1F2041;
+    --color5: #1E0227;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
