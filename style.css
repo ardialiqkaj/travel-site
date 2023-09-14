@@ -46,12 +46,35 @@ header nav {
     flex: 3;
     justify-content: space-between;
     margin-right: 70px;
+}
+
+nav a {
     color: var(--color5);
+    padding: 10px;
+}
+
+nav a:link {
+    text-decoration: none;
+}
+
+nav a:visited {
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--color2);
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+nav a:active {
+    text-decoration: none;
 }
 
 main {
     margin-left: 50px;
     margin-right: 50px;
+    color: var(--color5);
 }
 
 .hero {
@@ -63,7 +86,8 @@ main {
 }
 
 .hero div {
-    flex: 1;
+    width: 650px;
+    min-height: 300px;
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -71,8 +95,6 @@ main {
     justify-content: space-between;
     border: 1px solid lightgray;
     border-radius: 10px;
-    min-width: 350px;
-    max-width: 680px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -81,14 +103,12 @@ main {
 }
 
 .hero img {
-    min-height: 300px;
+    width: 650px;
     object-fit: cover;
-    flex: 1;
     margin: 20px;
     border: 1px solid lightgray;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    max-width: 680px;
 }
 
 .find-button {
@@ -98,7 +118,11 @@ main {
     color: var(--color1);
 }
 
-.tours {
+.find-button svg {
+    fill: var(--color1);
+}
+
+.tours-team {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -107,7 +131,7 @@ main {
     margin-bottom: 30px;
 }
 
-.tours article {
+.tours-team article {
     min-width: 200px;
     min-height: 450px;
     display: flex;
@@ -120,24 +144,35 @@ main {
     max-width: 300px;
 }
 
-.tours div {
+.tours-team div {
     padding: 10px;
 }
 
-.tours img {
+.tours-team img {
     width: 100%;
     min-width: 200px;
     border-radius: 10px 10px 0px 0px;
-    
+}
+
+.tours-team .team {
+    min-width: 280px;
+    border: 1px solid lightgray;
+    box-shadow: none;
+}
+
+.tours-team .team-img {
+    width: 150px;
+    min-width: 120px;
+    border-radius: 50%;margin-top: 20px;
 }
 
 @media only screen and (max-width: 860px) {
 
-    .tours {
+    .tours-team {
         justify-content: center;
     }
 
-    .tours article {
+    .tours-team article {
         margin: 5px;
     }
 }
@@ -152,11 +187,20 @@ main {
         margin-right: 10px;
     }
 
-    .hero img {
-        max-width: 120%;
+    .hero div {
+        margin: 5px;
     }
 
-    .tours article {
-        margin: 2px;
+    .hero img {
+        max-width: 97%;
+    }
+
+    .tours-team article {
+        margin: 5px;
+    }
+
+    main {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
