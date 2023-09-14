@@ -81,7 +81,7 @@ main {
 }
 
 .hero img {
-    height: 300px;
+    min-height: 300px;
     object-fit: cover;
     flex: 1;
     margin: 20px;
@@ -103,11 +103,12 @@ main {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .tours article {
-    flex: 1;
-    width: 250px;
+    min-width: 200px;
     min-height: 450px;
     display: flex;
     flex-direction: column;
@@ -116,6 +117,7 @@ main {
     margin: 25px;
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px -6px inset, rgba(0, 0, 0, 0.3) 0px 9px 18px -9px inset;
+    max-width: 300px;
 }
 
 .tours div {
@@ -126,11 +128,18 @@ main {
     width: 100%;
     min-width: 200px;
     border-radius: 10px 10px 0px 0px;
+    
 }
 
-footer {
-    display: flex;
-    justify-content: center;
+@media only screen and (max-width: 860px) {
+
+    .tours {
+        justify-content: center;
+    }
+
+    .tours article {
+        margin: 5px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -148,6 +157,6 @@ footer {
     }
 
     .tours article {
-        margin: 5px;
+        margin: 2px;
     }
 }
