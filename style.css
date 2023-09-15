@@ -14,7 +14,7 @@ html, body {
 }
 
 body {
-    font-family: Roboto;
+    font-family: 'Roboto', 'sans-serif';
 }
 
 li {
@@ -62,7 +62,8 @@ nav a:visited {
 }
 
 nav a:hover {
-    background-color: var(--color2);
+    background-color: var(--color4);
+    color: var(--color1);
     border-radius: 10px;
     text-decoration: none;
 }
@@ -252,6 +253,14 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.contact-form textarea {
+    padding: 4px;
+    margin: 12px;
+    width: 250px;
+    font-family: 'Roboto', 'sans-serif';
+    max-width: 250px;
 }
 
 @media only screen and (max-width: 860px) {
