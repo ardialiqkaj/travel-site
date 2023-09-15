@@ -166,6 +166,94 @@ main {
     border-radius: 50%;margin-top: 20px;
 }
 
+.tours-team.contacts {
+    justify-content: center;
+}
+
+.tours-team.contacts article {
+    width: 180px;
+    min-width: 180px;
+    min-height: 200px;
+    box-shadow: none;
+    border: 1px solid lightgray;
+}
+
+.tours-team.contacts img {
+    width: 120px;
+    min-width: 100px;
+    border-radius: 0px;
+    padding-top: 20px;
+}
+
+.tours-team.contacts svg {
+    fill: var(--color4);
+    padding-top: 20px;
+    width: 80px;
+}
+
+.tours-team.contacts a:link {
+    text-decoration: none;
+    color: var(--color5);
+}
+
+.tours-team.contacts a:visited {
+    text-decoration: none;
+    color: var(--color5);
+}
+
+.tours-team.contacts a:hover {
+    text-decoration: none;
+    color: var(--color3);
+}
+
+.tours-team.contacts a:active {
+    text-decoration: none;
+    color: var(--color5);
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contact-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.contact-form form {
+    display: flex;
+}
+
+.contact-form form input {
+    padding: 4px;
+    margin: 12px;
+    width: 250px;
+}
+
+.contact-form .find-button {
+    width: 80px;
+}
+
+.contact-form .form-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 @media only screen and (max-width: 860px) {
 
     .tours-team {
@@ -174,6 +262,14 @@ main {
 
     .tours-team article {
         margin: 5px;
+    }
+
+    .contact-form form {
+        flex-direction: column;
+    }
+
+    .contact-form form .message {
+        height: 80px;
     }
 }
 
